@@ -1,8 +1,8 @@
-package com.vehicle;
+package model;
 
 //Abstract Class with static block
 
-abstract class Vehicle {
+public abstract class Vehicle {
 
  private String vehicleNumber;
  private String brand;

@@ -1,8 +1,14 @@
-package com.vehicle;
+package manager;
+
+import exception.InvalidBookingException;
+import model.Customer;
+import model.Vehicle;
+import service.BookingService;
+import service.MaintenanceTracker;
 
 // Business Class
 
-class VehicleRentalManager implements BookingService, MaintenanceTracker {
+public class VehicleRentalManager implements BookingService, MaintenanceTracker {
 
     private static int bookingCount = 0;
 

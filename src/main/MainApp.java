@@ -1,4 +1,11 @@
-package com.vehicle;
+package main;
+
+import exception.InvalidBookingException;
+import manager.VehicleRentalManager;
+import model.Bike;
+import model.Car;
+import model.Customer;
+import model.Vehicle;
 
 //Driver Class
 

@@ -1,16 +1,15 @@
-package com.vehicle;
-
+package model;
 //Inheritance
 
-class Car extends Vehicle {
+public class Bike extends Vehicle {
 
- private int numberOfDoors;
+ private boolean hasGear;
 
- public Car(String vehicleNumber, String brand, double rentPerDay, int numberOfDoors) {
+ public Bike(String vehicleNumber, String brand, double rentPerDay, boolean hasGear) {
 
      super(vehicleNumber, brand, rentPerDay);
 
-     this.numberOfDoors = numberOfDoors;
+     this.hasGear = hasGear;
  }
 
  // Method Overriding
@@ -18,10 +17,10 @@ class Car extends Vehicle {
  @Override
  public String getDetails() {
 
-     return "Car: " + getBrand()
+     return "Bike: " + getBrand()
              + ", Vehicle No: " + getVehicleNumber()
              + ", Rent/Day: " + getRentPerDay()
-             + ", Doors: " + numberOfDoors;
+             + ", Gear: " + hasGear;
  }
 
  // Method Overloading
@@ -45,11 +44,11 @@ class Car extends Vehicle {
      if (this == obj)
          return true;
 
-     if (!(obj instanceof Car))
+     if (!(obj instanceof Bike))
          return false;
 
-     Car c = (Car) obj;
+     Bike b = (Bike) obj;
 
-     return getVehicleNumber().equals(c.getVehicleNumber());
+     return getVehicleNumber().equals(b.getVehicleNumber());
  }
 }

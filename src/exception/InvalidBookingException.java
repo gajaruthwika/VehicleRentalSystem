@@ -1,8 +1,8 @@
-package com.vehicle;
+package exception;
 
 //Custom Exception
 
-class InvalidBookingException extends Exception {
+public class InvalidBookingException extends Exception {
 
  public InvalidBookingException(String message) {
 

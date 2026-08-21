@@ -1,8 +1,8 @@
-package com.vehicle;
+package model;
 
 //Customer Class
 
-class Customer {
+public class Customer {
 
  private String customerId;
  private String name;
@@ -66,7 +66,7 @@ class Customer {
 
  // Inner Class
 
- class Address {
+ public class Address {
 
      String city;
      String state;

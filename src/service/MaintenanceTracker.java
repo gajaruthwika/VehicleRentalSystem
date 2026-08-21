@@ -1,6 +1,8 @@
-package com.vehicle;
+package service;
 
-interface MaintenanceTracker {
+import model.Vehicle;
+
+public interface MaintenanceTracker {
 
     void sendForMaintenance(Vehicle v);
 
